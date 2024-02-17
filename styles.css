@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(img/fundo001.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    border-radius: 25px;
+    color: #2f302f;
+    font-size: 40px;
+
+}
+
+
+button {
+    background-color: #F0EBDE;
+    color: #2f302f;
+    box-shadow: 2px 2px 2px #1a1a1a;
+    border: none;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #F0EBDE;
+    color: #978154;
+    border: 1px solid #000000;
+}
+
+button:hover i {
+    color: #978154;
+}
+
+button i {
+    color: #000000;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+input,
+select {
+    padding: 0.25rem 0.7rem;
+}
+
+
+#edit-input {
+    width: 380px;
+    height: 70px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: #F0EBDE;
+    color: #1a1a1a;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* HEADER */
+
+.container {
+
+    max-width: 450px;
+    margin: 3rem auto;
+    background-image: linear-gradient(#d6d6ba, #978154);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #363634;
+    margin-top: 180px;
+}
+
+.container header {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #3a3939;
+}
+
+#todo-form,
+#edit-form {
+    padding: 1rem;
+
+
+}
+
+
+#todo-form p,
+#edit-form p {
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+
+#todo-input {
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: #F0EBDE;
+    color: #141414;
+    height: 50px;
+    width: 250px;
+}
+
+
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 0.3rem;
+
+}
+
+.ok {
+    margin-top: 22px;
+    width: 34px;
+    height: 34px;
+}
+
+
+
+#cancel-edit-btn {
+    margin-top: 22px;
+    width: 170px;
+    height: 40px;
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: 500;
+
+}
+
+/* Todo List */
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px;
+    border: 2px solid #3a3939;
+    transition: .3s;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 55px;
+
+
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.8rem;
+    font-weight: 700;
+
+}
+
+.todo button {
+    margin-left: 0.4rem;
+
+}
+
+.done {
+    background-color: #2f302f;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+@media (max-width: 785px) {
+
+    .container {
+        width: 330px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 100px
+    }
+
+    #cancel-edit-btn {
+        margin-top: 22px;
+        width: 170px;
+        height: 35px;
+        margin-left: 15px;
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: -40px;
+        margin-left: -31px
+    }
+
+
+}
